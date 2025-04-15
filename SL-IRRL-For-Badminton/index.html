@@ -93,9 +93,15 @@
             margin-top: 30px;
         }
         
-        .overview h2 {
-            font-size: 22px;
+        .overview abstract-title {
+            font-size: 30px;
             margin-bottom: 15px;
+            color: #222;
+        }
+
+        .overview abstract {
+            font-size: 16px;
+            margin-bottom: 12px;
             color: #222;
         }
         
@@ -180,36 +186,18 @@
                 <!-- Paper Button -->
                 <a href="paper_link" class="nav-button">
                     <div class="button-icon">
-<!--                         <i class="far fa-file-pdf"></i> -->
                         <i class="fas fa-file-pdf"></i>
                     </div>
                     <span class="button-text">Paper</span>
                 </a>
                 
-                <!-- arXiv Button -->
-<!--                 <a href="arxiv_link" class="nav-button">
-                    <div class="button-icon">
-                        <span style="font-family: 'Times New Roman', serif; font-weight: bold;">χ</span>
-                    </div>
-                    <div class="button-text">arXiv</div>
-                </a> -->
-                
                 <!-- Video Button -->
                 <a href="https://www.youtube.com/watch?v=8f5pg0jeTfQ" class="nav-button">
                     <div class="button-icon">
-<!--                         <i class="fa fa-youtube-play" aria-hidden="true" /></i>-->
                         <i class="fab fa-youtube"></i>
                     </div>
                    <span class="button-text">Video</span>
                 </a>
-                
-                <!-- Summary Button -->
-<!--                 <a href="summary_link" class="nav-button">
-                    <div class="button-icon">
-                        <i class="fas fa-align-left"></i>
-                    </div>
-                    <div class="button-text">Summary</div>
-                </a> -->
                 
                 <!-- Code Button -->
                 <a href="https://github.com/Stylite-Y/SL_IRRL_for_Badminton" class="nav-button">
@@ -218,20 +206,8 @@
                     </div>
                     <span class="button-text">Code</span>
                 </a>
-                
-                <!-- 中文 Button -->
-<!--                 <a href="chinese_link" class="nav-button">
-                    <div class="button-icon">
-                        <span style="font-family: 'SimSun', serif;">中</span>
-                    </div>
-                    <div class="button-text">中文</div>
-                </a> -->
             </div>
         </header>
-        
-        <div class="overview">
-            <h2>Overview</h2>
-        </div>
 
         <div class="video-container">
            <h2>Overview</h2>
@@ -240,6 +216,27 @@
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen></iframe>
         </div>
+
+        <!--abstract -->
+        <div class="abstract">
+            <div class="abstract-title">Abstract</div>
+            <div class="abstract">
+                Robotic ball sports demonstrate the ability of robots to perform highly dynamic tasks. 
+                While most studies have focused on table tennis and soccer, real-time motion control in badminton remains underexplored. 
+                As the fastest racket sport, badminton demands more precise trajectory prediction, real-time motion planning, 
+                and higher dynamic responses of robotic arms, imposing significant challenges. 
+                This work presents a hybrid framework and a robot-badminton system for real-time shuttlecock striking. 
+                The framework (SL-IRRL) combines a supervised learning network for trajectory prediction with a two-stage 
+                Imitation-Relaxation training strategy for arm control, improving landing accuracy and convergence speed.  
+                Implemented on a robotic badminton system, our approach achieves a 90\% hitting success rate and a 70\% landing 
+                success rate over 60 trials, enabling sustained human-robot rallies. Comparative experiments with a UR5 arm 
+                validate the framework’s generalization and underscore the importance of high dynamic response of robotic arm in ball sports.
+            </div>
+        </div>
+        
+<!--         <div class="abstract">
+            <h2>Overview</h2>
+        </div> -->
     </div>
 </body>
 </html>
