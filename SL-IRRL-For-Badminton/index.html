@@ -84,22 +84,16 @@
             position: relative;
             width: 100%;
             padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            background-color: #f0f0f0;
             margin-bottom: 15px;
         }
         
-        .video-placeholder {
+        .video-iframe {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #555;
-            background-color: #e0e0e0;
+            border: none;
         }
         
         .video-controls {
@@ -107,12 +101,40 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 10px;
+            margin-bottom: 20px;
         }
         
         .video-title {
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 10px;
+        }
+        
+        .control-btn {
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .control-btn:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .youtube-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .youtube-link:hover {
+            text-decoration: underline;
+        }
+        
+        .award {
+            font-weight: bold;
+            color: #cc0000;
         }
         
         .control-btn {
@@ -159,55 +181,51 @@
         
         <div class="overview">
             <h2>Overview</h2>
-            
-            <div class="video-container">
-                <div class="video-placeholder">
-                    <div class="video-title">Real-Time Robotic Badminton Striking via Hybrid Supervised and Reinforcement Learning</div>
-                    <div>Video Placeholder</div>
-                </div>
+
+        <div class="video-container">
+           <h2>Overview</h2>
+            <!-- 替换YOUR_VIDEO_ID为实际的YouTube视频ID -->
+            <iframe class="video-iframe" src="https://www.youtube.com/embed/7hK2ySYBa1I&list=PL48kEv5UXcTolkIH95kIVAT6RMKBCW5sS" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+        </div>
+        
+        <div class="video-controls">
+            <div>
+                <button class="control-btn">稍后观看</button>
+                <button class="control-btn">分享</button>
             </div>
-            
-            <div class="video-controls">
-                <button class="control-btn">Play</button>
-                <div>
-                    <button class="control-btn">Watch Later</button>
-                    <button class="control-btn">Share</button>
-                </div>
-            </div>
-            
-            <div style="margin-top: 20px;">
-                <p>Real-Time Robotic Badminton Striking via Hybrid Supervised and Reinforcement Learning</p>
-            </div>
+        </div>
+        
+        <div class="video-title">
+            Real-Time Robotic Badminton Striking via Hybrid Supervised and Reinforcement Learning
+        </div>
+        
+        <div style="margin-top: 20px;">
+            <p>前往平台观看: <a href="https://www.youtube.com/watch?v=7hK2ySYBa1I&list=PL48kEv5UXcTolkIH95kIVAT6RMKBCW5sS" class="youtube-link" target="_blank">YouTube</a></p>
         </div>
     </div>
 
     <script>
-        // Simple interactivity for the buttons
         document.addEventListener('DOMContentLoaded', function() {
-            // Play button functionality
-            const playBtn = document.querySelector('.control-btn');
-            playBtn.addEventListener('click', function() {
-                alert('Video playback would start here in a real implementation');
-            });
-            
-            // Watch Later button
-            const watchLaterBtn = document.querySelectorAll('.control-btn')[1];
+            // 稍后观看按钮
+            const watchLaterBtn = document.querySelectorAll('.control-btn')[0];
             watchLaterBtn.addEventListener('click', function() {
-                alert('Added to Watch Later list');
+                alert('已添加到稍后观看列表');
             });
             
-            // Share button
-            const shareBtn = document.querySelectorAll('.control-btn')[2];
+            // 分享按钮
+            const shareBtn = document.querySelectorAll('.control-btn')[1];
             shareBtn.addEventListener('click', function() {
-                alert('Share options would appear here');
+                alert('分享功能已触发');
             });
             
-            // Navigation buttons
+            // 导航按钮
             const navButtons = document.querySelectorAll('.btn');
             navButtons.forEach(btn => {
                 btn.addEventListener('click', function(e) {
                     e.preventDefault();
-                    alert(`This would navigate to the ${this.textContent} section`);
+                    alert(`将跳转到${this.textContent}页面`);
                 });
             });
         });
