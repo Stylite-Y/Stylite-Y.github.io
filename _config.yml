@@ -3,7 +3,11 @@ title: Yanyan Yuan (袁炎炎)
 description: PhD student at School of Aeronautics and Astronautics, Zhejiang University 
              Robotics & Robotic Arm & Humanoid Robot & RL
 
-social:
-  email: "mailto:yuanyan_hy@zju.edu.cn"
-  github: "https://github.com/Stylite-Y"
-  zhihu: "https://www.zhihu.com/people/yuan-yan-yan-47"
+social_links:
+  - name: "📧 Email"
+    url: mailto:your.email@example.com
+  - name: "🐱 GitHub"
+    url: https://github.com/yourusername
+  - name: "🧠 知乎"
+    url: https://www.zhihu.com/people/yourzhihuusername
+
