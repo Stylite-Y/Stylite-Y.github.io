@@ -2,14 +2,6 @@ theme: jekyll-theme-minimal
 title: Yanyan Yuan (袁炎炎)
 description: PhD student at School of Aeronautics and Astronautics, Zhejiang University；Robotics & Robotic Arm & Humanoid Robot & RL
 
-social_links:
-  - name: "📧 Email"
-    url: mailto:your.email@example.com
-  - name: "🐱 GitHub"
-    url: https://github.com/yourusername
-  - name: "🧠 知乎"
-    url: https://www.zhihu.com/people/yourzhihuusername
-
 author:
   name: "Yanyan Yuan"
   bio: "热爱技术的开发者"
@@ -27,7 +19,7 @@ sidebar:
   # nav: "快速链接"
   author:
     name: true
-    avatar: true
+    # avatar: true
     bio: true
     location: true
     links: true
