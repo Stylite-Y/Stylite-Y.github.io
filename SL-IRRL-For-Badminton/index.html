@@ -26,18 +26,18 @@
         }
         
         h1 {
-            font-size: 28px;
+            font-size: 36px;
             margin-bottom: 10px;
             color: #222;
         }
         
         .authors {
-            font-size: 16px;
+            font-size: 20px;
             margin-bottom: 15px;
         }
         
         .affiliations {
-            font-size: 14px;
+            font-size: 20px;
             color: #555;
             margin-bottom: 20px;
         }
@@ -49,25 +49,41 @@
             color: #0066cc;
         }
         
-        .buttons {
+        .button-container {
             display: flex;
-            justify-content: center;
             gap: 15px;
-            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         
-        .btn {
-            padding: 8px 15px;
-            background-color: #0066cc;
+        .nav-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            background-color: #000;
             color: white;
+            border-radius: 15px;
             text-decoration: none;
-            border-radius: 4px;
-            font-size: 14px;
-            transition: background-color 0.3s;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         
-        .btn:hover {
-            background-color: #0055aa;
+        .nav-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .button-icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .button-text {
+            font-size: 14px;
+            font-weight: bold;
         }
         
         .overview {
@@ -132,24 +148,6 @@
         .youtube-link:hover {
             text-decoration: underline;
         }
-        
-        .award {
-            font-weight: bold;
-            color: #cc0000;
-        }
-        
-        .control-btn {
-            padding: 5px 10px;
-            background-color: #f0f0f0;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-        
-        .control-btn:hover {
-            background-color: #e0e0e0;
-        }
     </style>
 </head>
 <body>
@@ -173,10 +171,54 @@
                 Subumitted to IEEE Robotics and Automation Letters (RAL 2025)
             </div>
             
-            <div class="buttons">
-                <a href="#" class="btn">Paper</a>
-                <a href="https://github.com/Stylite-Y/SL_IRRL_for_Badminton" class="btn">Code</a>
-                <a href="#" class="btn">Video</a>
+            <div class="button-container">
+                <!-- Paper Button -->
+                <a href="paper_link" class="nav-button">
+                    <div class="button-icon">
+                        <i class="far fa-file-alt"></i>
+                    </div>
+                    <div class="button-text">Paper</div>
+                </a>
+                
+                <!-- arXiv Button -->
+<!--                 <a href="arxiv_link" class="nav-button">
+                    <div class="button-icon">
+                        <span style="font-family: 'Times New Roman', serif; font-weight: bold;">χ</span>
+                    </div>
+                    <div class="button-text">arXiv</div>
+                </a> -->
+                
+                <!-- Video Button -->
+                <a href="https://www.youtube.com/watch?v=8f5pg0jeTfQ" class="nav-button">
+                    <div class="button-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="button-text">Video</div>
+                </a>
+                
+                <!-- Summary Button -->
+<!--                 <a href="summary_link" class="nav-button">
+                    <div class="button-icon">
+                        <i class="fas fa-align-left"></i>
+                    </div>
+                    <div class="button-text">Summary</div>
+                </a> -->
+                
+                <!-- Code Button -->
+                <a href="https://github.com/Stylite-Y/SL_IRRL_for_Badminton" class="nav-button">
+                    <div class="button-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="button-text">Code</div>
+                </a>
+                
+                <!-- 中文 Button -->
+<!--                 <a href="chinese_link" class="nav-button">
+                    <div class="button-icon">
+                        <span style="font-family: 'SimSun', serif;">中</span>
+                    </div>
+                    <div class="button-text">中文</div>
+                </a> -->
             </div>
         </header>
         
