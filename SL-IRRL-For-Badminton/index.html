@@ -1,12 +1,218 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Project1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeamDojo: Learning Agile Humanoid Locomotion on Sparse Footholds</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        
+        .authors {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        
+        .affiliations {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .conference {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            color: #0066cc;
+        }
+        
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            padding: 8px 15px;
+            background-color: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #0055aa;
+        }
+        
+        .overview {
+            margin-top: 30px;
+        }
+        
+        .overview h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            background-color: #f0f0f0;
+            margin-bottom: 15px;
+        }
+        
+        .video-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #555;
+            background-color: #e0e0e0;
+        }
+        
+        .video-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        
+        .video-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .control-btn {
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .control-btn:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
 </head>
 <body>
-  <h1>Project1</h1>
-  <p>这是我的第一个项目的介绍页面。</p>
-  <a href="../">返回主页</a>
+    <div class="container">
+        <header>
+            <h1>BeamDojo: Learning Agile Humanoid Locomotion on Sparse Footholds</h1>
+            
+            <div class="authors">
+                Huayi Wang<sup>1,2</sup>, Tirui Ren<sup>1,4</sup>, Qingwei Ben<sup>1,5</sup>, 
+                Tao Huang<sup>1,2</sup>, Weinan Zhang<sup>2</sup>, Jiangmiao Pang<sup>1</sup>
+            </div>
+            
+            <div class="affiliations">
+                <sup>1</sup>Shanghai AI Laboratory, 
+                <sup>2</sup>Shanghai Jiao Tong University, 
+                <sup>3</sup>Zhejiang University,<br>
+                <sup>4</sup>The University of Hong Kong, 
+                <sup>5</sup>The Chinese University of Hong Kong
+            </div>
+            
+            <div class="conference">
+                Robotics: Science and Systems (RSS) 2025
+            </div>
+            
+            <div class="buttons">
+                <a href="#" class="btn">Paper</a>
+                <a href="#" class="btn">ArXiv</a>
+                <a href="#" class="btn">Video</a>
+                <a href="#" class="btn">Summary</a>
+            </div>
+        </header>
+        
+        <div class="overview">
+            <h2>Overview</h2>
+            
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <div class="video-title">BeamDojo: Learning Humanoid Locomotion on Sparse Footholds</div>
+                    <div>Video Placeholder</div>
+                </div>
+            </div>
+            
+            <div class="video-controls">
+                <button class="control-btn">Play</button>
+                <div>
+                    <button class="control-btn">Watch Later</button>
+                    <button class="control-btn">Share</button>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px;">
+                <p>BeamDojo: Learning Agile Humanoid Locomotion on Sparse Footholds</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple interactivity for the buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            // Play button functionality
+            const playBtn = document.querySelector('.control-btn');
+            playBtn.addEventListener('click', function() {
+                alert('Video playback would start here in a real implementation');
+            });
+            
+            // Watch Later button
+            const watchLaterBtn = document.querySelectorAll('.control-btn')[1];
+            watchLaterBtn.addEventListener('click', function() {
+                alert('Added to Watch Later list');
+            });
+            
+            // Share button
+            const shareBtn = document.querySelectorAll('.control-btn')[2];
+            shareBtn.addEventListener('click', function() {
+                alert('Share options would appear here');
+            });
+            
+            // Navigation buttons
+            const navButtons = document.querySelectorAll('.btn');
+            navButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert(`This would navigate to the ${this.textContent} section`);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
