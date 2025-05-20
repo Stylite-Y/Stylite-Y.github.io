@@ -192,7 +192,7 @@
                 </a>
                 
                 <!-- Code Button -->
-                <a href="https://github.com/Stylite-Y/SL_IRRL_for_Badminton" target="_blank" class="nav-button">
+                <a href="https://github.com/Stylite-Y/DTG_IRRL_for_Badminton" target="_blank" class="nav-button">
                     <div class="button-icon">
                         <i class="fab fa-github"></i>
                     </div>
@@ -265,16 +265,20 @@
         <div class="section">
             <div class="section-title">Abstract</div>
             <div class="abstract">
-                Robotic ball sports demonstrate the ability of robots to perform highly dynamic tasks. 
-                While most studies have focused on table tennis and soccer, real-time motion control in badminton remains underexplored. 
-                As the fastest racket sport, badminton demands more precise trajectory prediction, real-time motion planning, 
-                and higher dynamic responses of robotic arms, imposing significant challenges. 
-                This work presents a hybrid framework and a robot-badminton system for real-time shuttlecock striking. 
-                The framework (SL-IRRL) combines a supervised learning network for trajectory prediction with a two-stage 
-                Imitation-Relaxation training strategy for arm control, improving landing accuracy and convergence speed.  
-                Implemented on a robotic badminton system, our approach achieves a 90\% hitting success rate and a 70\% landing 
-                success rate over 60 trials, enabling sustained human-robot rallies. Comparative experiments with a UR5 arm 
-                validate the framework’s generalization and underscore the importance of high dynamic response of robotic arm in ball sports.
+                Robotic racket sports present exceptional benchmarks for evaluating dynamic motion control 
+                capabilities of robots. Due to the highly nonlinear dynamics of shuttlecock, stringent demands 
+                on robot's dynamic responses, convergence difficulties due to sparse reward in reinforcement 
+                learning, badminton strikes remain a formidable challenge for robot systems. To address these, 
+                this work proposes DTG-IRRL, a novel learning framework for badminton strikes, which integrates 
+                imitation-relaxation reinforcement learning with dynamic trajectory generation. The framework 
+                demonstrates significantly improved training efficiency and performance, achieving faster 
+                convergence and twice higher landing accuracy. Analysis of the reward function within a specific 
+                parameter space hyperplane intuitively reveals the convergence difficulties arising from inherent 
+                sparse reward in racket sports and demonstrates the framework's effectiveness in mitigating local 
+                and slow convergence. Implemented on hardware with zero-shot transfer, the framework achieves a 
+                90% hitting rate and a 70\% landing accuracy, enabling sustained human-robot rallies. 
+                Cross-platform validation using UR5 robot demonstrates framework's generalizability while 
+                highlighting the requirement for high dynamic performance of robotic arm in racket sports.
             </div>
         </div>
         
